@@ -1,0 +1,7 @@
+/__lwr_cache__
+/node_modules
+/site
+/src/assets/icons/*
+/src/assets/images/*
+/src/assets/styles/*
+package-lock.json

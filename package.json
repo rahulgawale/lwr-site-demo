@@ -1,0 +1,33 @@
+{
+  "name": "lwr-site-demo",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf node_modules __lwr_cache__ site",
+    "dev": "lwr dev",
+    "dev:compat": "lwr dev --mode compat",
+    "build": "lwr build --clean",
+    "build:prod-compat": "lwr build --clean --mode prod-compat",
+    "start": "lwr start",
+    "stage": "yarn build && yarn start",
+    "stage:prod-compat": "yarn build:prod-compat && yarn start",
+    "build-slds": "node ./scripts/copy-slds.mjs"
+  },
+  "dependencies": {
+    "lightning-base-components": "^1.9.0-alpha",
+    "lwc": "5.0.0",
+    "lwr": "0.11.13"
+  },
+  "devDependencies": {
+    "@salesforce-ux/design-system": "^2.17.5",
+    "cpx": "^1.5.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "volta": {
+    "node": "18.16.1"
+  }
+}
